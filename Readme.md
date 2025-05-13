@@ -43,12 +43,12 @@ This is a Python project to send emails using Gmail's SMTP server. This project 
 
 4. **Create a .env file**
 
-    Create a .env file in the root of your project directory and add the following:
+    Create a .env file in the root directory of your project and add the following content:
 
     EMAIL_SENDER=<your_email@gmail.com>
 
     EMAIL_PASSWORD=your_password
-
+    
     EMAIL_RECEIVER=<receiver_email@gmail.com>
 
 ## Usage
