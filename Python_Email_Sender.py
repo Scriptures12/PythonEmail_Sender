@@ -40,18 +40,18 @@ def send_email(Sender, Password, Receiver, Subject, Body):
     em['Subject'] = Subject
     em.set_content(Body)
 
-# Create a secure SSL context
-context = ssl.create_default_context()
-try:
-    # Send the email
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context) as smtp:
-        smtp.login(Sender, Password)
-        smtp.sendmail(Sender, Receiver, em.as_string())
-        logging.info("Email sent successfully!")
-except Exception as e:
-    logging.error(f"Failed to send email: {e}")
+    # Create a secure SSL context
+    context = ssl.create_default_context()
+    try:
+        # Send the email
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context) as smtp:
+            smtp.login(Sender, Password)
+            smtp.sendmail(Sender, Receiver, em.as_string())
+            logging.info("Email sent successfully!")
+    except Exception as e:
+        logging.error(f"Failed to send email: {e}")
 
 # Call the function to send the email
-send_email(email_Sender, email_Receiver, email_Subject, email_Body)
+send_email(email_Sender, email_Password,email_Receiver, email_Subject, email_Body)
 
 
