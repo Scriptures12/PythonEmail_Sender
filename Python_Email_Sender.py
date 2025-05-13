@@ -22,15 +22,23 @@ if not email_Sender or not email_Password or not email_Receiver:
     "or EMAIL_RECIEVER. please check your .env file")
 
 # Set up email content
-email_Subject = "Don\'t forget to subscribe!"
+email_Subject = "Request for Meeting to Discuss Collaboration Opportunities"
 email_Body = (
-    "Hello, \n\n"
-    "I hope this email finds you well. I wanted to take a moment to remind you to "
-    "subscribe to my YouTube channel if you haven't already. Your support means a lot to me and helps me continue creating content.\n\n"
-    "Thank you for your time and support!\n\n"
+    "Dear Figures,\n\n"
+    "I hope this message finds you well.\n\n"
+    "My name is Rivers, and I am the Chief Engineer at GO_IT Solutions. I am reaching out to explore potential "
+    "opportunities for collaboration between our organizations. We believe that working together could bring mutual "
+    "benefits and help us achieve shared objectives.\n\n"
+    "I would appreciate the opportunity to schedule a brief meeting at your convenience to discuss this further. "
+    "Please let me know your availability, and I will do my best to accommodate.\n\n"
+    "Thank you for your time and consideration. I look forward to your response.\n\n"
     "Best regards,\n"
-    "Linkage Upwards\n\n"
+    "Rivers\n"
+    "Chief Engineer\n"
+    "GO_IT Solutions\n"
+    "000-000-0000\n"
 )
+
 
 # Function to send email
 def send_email(Sender, Password, Receiver, Subject, Body):
