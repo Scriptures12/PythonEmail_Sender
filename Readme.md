@@ -1,7 +1,7 @@
 
 # Email Sender
 
-A Python project to send emails using Gmail's SMTP server. This project uses environment variables to securely store sensitive information like email credentials.
+This is a Python project to send emails using Gmail's SMTP server. This project uses environment variables to securely store sensitive information like email credentials.
 
 ---
 
@@ -63,6 +63,7 @@ A Python project to send emails using Gmail's SMTP server. This project uses env
 ## Project Structure
 
 EmailSender/
+
 ├── [Python_Email_Sender.py]  # Main script to send emails
 
 ├── .env      # Environment variables (not included in the repo)
