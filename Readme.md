@@ -55,6 +55,7 @@ A Python project to send emails using Gmail's SMTP server. This project uses env
     python python_Email_Sender.py
 
 2. **Expected Output:**
+
     If successful, you will see a log message: INFO:root:Email sent successfully!
 
     If there is an error, it will be logged.
@@ -63,6 +64,9 @@ A Python project to send emails using Gmail's SMTP server. This project uses env
 
 EmailSender/
 ├── [Python_Email_Sender.py]  # Main script to send emails
+
 ├── .env      # Environment variables (not included in the repo)
+
 ├── requirements.txt        # Python dependencies
+
 └── README.md               # Project documentation
